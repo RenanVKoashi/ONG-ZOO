@@ -29,6 +29,7 @@ CREATE TABLE IF NOT EXISTS UsuarioPessoa(
 	telefone varchar(15) not null,
 	endereco varchar(100) not null,
 	idPlano int,
+	email varchar(50) not null,
 	foreign key(idPlano) references Plano(idPlano)
 );
 
