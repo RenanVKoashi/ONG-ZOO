@@ -15,51 +15,34 @@
 
 </head>
 
-
 <body>
-
-    <!--NavBbar Login--> 
-
-    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" class="logo img-fluid">
-                <span>Amigos da Fauna
-                    <small>Organização não governamental (ONG)</small>
-                </span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toogle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
-
     <!--Área de Login-->
-
-    <div class="login-container-mb-3">
-        <form action="">
-            <h2>Login</h2>
-            <div class="input-box">
-                <span class="icon"><ion-icon name="mail-sharp"></ion-icon></span>
-                <input type="email" required>
-                <label>EMAIL</label>
+    <section>
+        <div class-="user-container">
+            <div class="login-container-mb-3">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-sharp"></ion-icon></span>
+                        <input type="email" required>
+                        <label>EMAIL</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-sharp"></ion-icon></span>
+                        <input type="password" required>
+                        <label>SENHA</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Mantenha-me conectado</label>
+                    </div>
+                    <button type="submit">Login</button>
+                    <div class="register-link">
+                        <p><a href="#">Não tem uma conta? Clique aqui</a></p>
+                    </div> 
+                </form>
             </div>
-            <div class="input-box">
-                <span class="icon"><ion-icon name="lock-closed-sharp"></ion-icon></span>
-                <input type="password" required>
-                <label>SENHA</label>
-            </div>
-            <div class="remember-forgot">
-                <label><input type="checkbox">Mantenha-me conectado</label>
-            </div>
-            <button type="submit">Login</button>
-            <div class="register-link">
-                <p>Não Possui uma conta? <a hrfef="#">Registre-se</a></p>
-            </div> 
-        </form>
-    </div>
-
+        </div>
+    </section>
 
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
