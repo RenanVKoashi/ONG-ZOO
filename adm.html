@@ -10,19 +10,18 @@
 
 <header>
     <h1>Controle</h1>
-    
 </header>
 
 <nav>
-    
-    <a href="#controle-apoiadores">Controle de Apoiadores</a>
-    <a href="#controle-planos">Controle de Planos</a>
-    <a href="#controle-doacao">Controle de Doação</a>
-    <a href="#controle-usuarios">Controle de Usuários</a>
-    <a href="#controle-visitas">Controle de Visitas</a>
-    <a href="#controle-denuncias">Controle de Denúncias</a>
-    <a href="#controle-animais">Controle de Animais</a>
-    <a href="#controle-eventos">Controle de Eventos</a>
+   <a href="#controle-apoiadores">Apoiadores</a>
+    <a href="#controle-planos">Planos</a>
+    <a href="#controle-doacao">Doação</a>
+    <a href="#controle-usuarios">Usuários</a>
+    <a href="#controle-visitas">Visitas</a>
+    <a href="#controle-denuncias">Denúncias</a>
+    <a href="#controle-animais">Animais</a>
+    <a href="#controle-eventos">Eventos</a>
+    <a href="index.html">Sair</a>
 </nav>
 
 <main>
@@ -32,21 +31,21 @@
         <button class="add-btn">Adicionar Apoiador</button>
         <div class="list">
             <div class="item">
-                <img href="LogoLink"> LogoLink
-                <p>CNPJ: XXXX<br>Nome Fantasia: XXXX<br>Plano: XXXX</p>
+                <img src="https://via.placeholder.com/100" alt="Logo"> 
+                <p>CNPJ: 12.345.678/0001-90<br>Nome Fantasia: Apoiador XYZ<br>Plano: Premium</p>
                 <button class="alter-btn">Alterar</button>
                 <button>Excluir</button>
             </div>
         </div>
         <form class="form-section" style="display: none;">
             <label for="cnpj">CNPJ:</label>
-            <input type="text" id="cnpj" name="cnpj"><br>
+            <input type="text" id="cnpj" name="cnpj" value="12.345.678/0001-90"><br>
             <label for="nomeFantasia">Nome Fantasia:</label>
-            <input type="text" id="nomeFantasia" name="nomeFantasia"><br>
+            <input type="text" id="nomeFantasia" name="nomeFantasia" value="Apoiador XYZ"><br>
             <label for="logoLink">Link da Logo:</label>
-            <input type="text" id="logoLink" name="logoLink"><br>
+            <input type="text" id="logoLink" name="logoLink" value="https://via.placeholder.com/100"><br>
             <label for="idPlano">Plano:</label>
-            <input type="text" id="idPlano" name="idPlano"><br>
+            <input type="text" id="idPlano" name="idPlano" value="Premium"><br>
             <button type="submit">Salvar Apoiador</button>
         </form>
     </section>
@@ -56,18 +55,18 @@
         <button class="add-btn">Adicionar Plano</button>
         <div class="list">
             <div class="item">
-                <p>Plano: XXXX<br>Nome: XXXX<br>Valor Mensal: XXXX</p>
+                <p>Plano: Premium<br>Nome: Apoiador de Ouro<br>Valor Mensal: R$ 500,00</p>
                 <button class="alter-btn">Alterar</button>
                 <button>Excluir</button>
             </div>
         </div>
         <form class="form-section" style="display: none;">
             <label for="idPlano">Id Plano:</label>
-            <input type="text" id="idPlanoPlano" name="idPlano"><br>
+            <input type="text" id="idPlanoPlano" name="idPlano" value="Premium"><br>
             <label for="nomePlano">Nome:</label>
-            <input type="text" id="nomePlano" name="nomePlano"><br>
+            <input type="text" id="nomePlano" name="nomePlano" value="Apoiador de Ouro"><br>
             <label for="valorMensal">Valor Mensal:</label>
-            <input type="number" id="valorMensal" name="valorMensal"><br>
+            <input type="number" id="valorMensal" name="valorMensal" value="500.00"><br>
             <button type="submit">Salvar Plano</button>
         </form>
     </section>
@@ -77,22 +76,22 @@
         <button class="add-btn">Adicionar Doação</button>
         <div class="list">
             <div class="item">
-                <p>Numero da Doação: XXXX<br>Tipo: XXXX<br>Item: XXXX<br>Quantidade: XXXX<br>Status: XXXX</p>
+                <p>Numero da Doação: 1001<br>Tipo: Dinheiro<br>Item: Rações<br>Quantidade: 50<br>Status: Concluída</p>
                 <button class="alter-btn">Alterar</button>
                 <button>Excluir</button>
             </div>
         </div>
         <form class="form-section" style="display: none;">
             <label for="idDoacao">Numero da Doação:</label>
-            <input type="text" id="idDoacao" name="idDoacao"><br>
+            <input type="text" id="idDoacao" name="idDoacao" value="1001"><br>
             <label for="tipoDoacao">Tipo:</label>
-            <input type="text" id="tipoDoacao" name="tipoDoacao"><br>
+            <input type="text" id="tipoDoacao" name="tipoDoacao" value="Dinheiro"><br>
             <label for="itemDoacao">Item:</label>
-            <input type="text" id="itemDoacao" name="itemDoacao"><br>
+            <input type="text" id="itemDoacao" name="itemDoacao" value="Rações"><br>
             <label for="quantidade">Quantidade:</label>
-            <input type="number" id="quantidade" name="quantidade"><br>
+            <input type="number" id="quantidade" name="quantidade" value="50"><br>
             <label for="statusDoacao">Status:</label>
-            <input type="text" id="statusDoacao" name="statusDoacao"><br>
+            <input type="text" id="statusDoacao" name="statusDoacao" value="Concluída"><br>
             <button type="submit">Salvar Doação</button>
         </form>
     </section>
@@ -102,20 +101,20 @@
         <button class="add-btn">Adicionar Usuário</button>
         <div class="list">
             <div class="item">
-                <p>Codigo: XXXX<br>Telefone: XXXX<br>Endereço: XXXX<br>Plano: XXXX</p>
+                <p>Codigo: 001<br>Telefone: (11) 98765-4321<br>Endereço: Rua X, 123<br>Plano: Básico</p>
                 <button class="alter-btn">Alterar</button>
                 <button>Excluir</button>
             </div>
         </div>
         <form class="form-section" style="display: none;">
             <label for="idPessoa">Codigo:</label>
-            <input type="text" id="idPessoa" name="idPessoa"><br>
+            <input type="text" id="idPessoa" name="idPessoa" value="001"><br>
             <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone" name="telefone"><br>
+            <input type="text" id="telefone" name="telefone" value="(11) 98765-4321"><br>
             <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" name="endereco"><br>
+            <input type="text" id="endereco" name="endereco" value="Rua X, 123"><br>
             <label for="idPlanoUsuario">Plano:</label>
-            <input type="text" id="idPlanoUsuario" name="idPlanoUsuario"><br>
+            <input type="text" id="idPlanoUsuario" name="idPlanoUsuario" value="Básico"><br>
             <button type="submit">Salvar Usuário</button>
         </form>
     </section>
@@ -125,22 +124,22 @@
         <button class="add-btn">Adicionar Visita</button>
         <div class="list">
             <div class="item">
-                <p>Codigo: XXXX<br>Usuario: XXXX<br>Animal: XXXX<br>Data: XXXX<br>Status: XXXX</p>
+                <p>Codigo: 100<br>Usuario: 001<br>Animal: 12<br>Data: 2024-12-01<br>Status: Confirmada</p>
                 <button class="alter-btn">Alterar</button>
                 <button>Excluir</button>
             </div>
         </div>
         <form class="form-section" style="display: none;">
             <label for="idVisita">Visita:</label>
-            <input type="text" id="idVisita" name="idVisita"><br>
+            <input type="text" id="idVisita" name="idVisita" value="100"><br>
             <label for="idUsuario">Usuário:</label>
-            <input type="text" id="idUsuario" name="idUsuario"><br>
+            <input type="text" id="idUsuario" name="idUsuario" value="001"><br>
             <label for="idAnimal">Animal:</label>
-            <input type="text" id="idAnimal" name="idAnimal"><br>
+            <input type="text" id="idAnimal" name="idAnimal" value="12"><br>
             <label for="data">Data:</label>
-            <input type="date" id="data" name="data"><br>
+            <input type="date" id="data" name="data" value="2024-12-01"><br>
             <label for="statusVisita">Status:</label>
-            <input type="text" id="statusVisita" name="statusVisita"><br>
+            <input type="text" id="statusVisita" name="statusVisita" value="Confirmada"><br>
             <button type="submit">Salvar Visita</button>
         </form>
     </section>
@@ -150,22 +149,22 @@
         <button class="add-btn">Adicionar Denúncia</button>
         <div class="list">
             <div class="item">
-                <p>Denuncia: XXXX<br>Status: XXXX<br>Localização: XXXX<br>Animal: XXXX<br>Descrição: XXXX</p>
+                <p>Denuncia: 2024-01<br>Status: Resolvida<br>Localização: Rua Y, 456<br>Animal: Gato<br>Descrição: Animal abandonado</p>
                 <button class="alter-btn">Alterar</button>
                 <button>Excluir</button>
             </div>
         </div>
         <form class="form-section" style="display: none;">
             <label for="idDenuncia">Denúncia:</label>
-            <input type="text" id="idDenuncia" name="idDenuncia"><br>
+            <input type="text" id="idDenuncia" name="idDenuncia" value="2024-01"><br>
             <label for="statusDenuncia">Status:</label>
-            <input type="text" id="statusDenuncia" name="statusDenuncia"><br>
+            <input type="text" id="statusDenuncia" name="statusDenuncia" value="Resolvida"><br>
             <label for="localizacao">Localização:</label>
-            <input type="text" id="localizacao" name="localizacao"><br>
-            <label for="animalDenuncia">Animal:</label>
-            <input type="text" id="animalDenuncia" name="animalDenuncia"><br>
+            <input type="text" id="localizacao" name="localizacao" value="Rua Y, 456"><br>
+            <label for="idAnimalDenuncia">Animal:</label>
+            <input type="text" id="idAnimalDenuncia" name="idAnimalDenuncia" value="Gato"><br>
             <label for="descricaoDenuncia">Descrição:</label>
-            <textarea id="descricaoDenuncia" name="descricaoDenuncia"></textarea><br>
+            <input type="text" id="descricaoDenuncia" name="descricaoDenuncia" value="Animal abandonado"><br>
             <button type="submit">Salvar Denúncia</button>
         </form>
     </section>
@@ -175,28 +174,20 @@
         <button class="add-btn">Adicionar Animal</button>
         <div class="list">
             <div class="item">
-                <p>Animal: XXXX<br>Nome: XXXX<br>Tipo: XXXX<br>Idade: XXXX<br>Data Resgate: XXXX<br>Valor do Apadrinhamento: XXXX<br>História: XXXX<br>Status de Saúde: XXXX</p>
+                <p>Animal: 12<br>Nome: Bichano<br>Espécie: Gato<br>Idade: 3 anos</p>
                 <button class="alter-btn">Alterar</button>
                 <button>Excluir</button>
             </div>
         </div>
         <form class="form-section" style="display: none;">
-            <label for="idAnimal">Animal:</label>
-            <input type="text" id="idAnimal" name="idAnimal"><br>
+            <label for="idAnimal">Código do Animal:</label>
+            <input type="text" id="idAnimal" name="idAnimal" value="12"><br>
             <label for="nomeAnimal">Nome:</label>
-            <input type="text" id="nomeAnimal" name="nomeAnimal"><br>
-            <label for="tipoAnimal">Tipo:</label>
-            <input type="text" id="tipoAnimal" name="tipoAnimal"><br>
-            <label for="idade">Idade:</label>
-            <input type="number" id="idade" name="idade"><br>
-            <label for="dataResgate">Data de Resgate:</label>
-            <input type="date" id="dataResgate" name="dataResgate"><br>
-            <label for="valorApadrinhamento">Valor do Apadrinhamento:</label>
-            <input type="number" id="valorApadrinhamento" name="valorApadrinhamento"><br>
-            <label for="historia">História:</label>
-            <textarea id="historia" name="historia"></textarea><br>
-            <label for="statusSaude">Status de Saúde:</label>
-            <input type="text" id="statusSaude" name="statusSaude"><br>
+            <input type="text" id="nomeAnimal" name="nomeAnimal" value="Bichano"><br>
+            <label for="especieAnimal">Espécie:</label>
+            <input type="text" id="especieAnimal" name="especieAnimal" value="Gato"><br>
+            <label for="idadeAnimal">Idade:</label>
+            <input type="text" id="idadeAnimal" name="idadeAnimal" value="3 anos"><br>
             <button type="submit">Salvar Animal</button>
         </form>
     </section>
@@ -206,45 +197,24 @@
         <button class="add-btn">Adicionar Evento</button>
         <div class="list">
             <div class="item">
-                <p>Evento: XXXX<br>Nome: XXXX<br>Data: XXXX<br>Descrição: XXXX<br>Tipo: XXXX</p>
+                <p>Evento: Evento de Doação<br>Data: 2024-12-10<br>Local: Praça A<br>Status: Confirmado</p>
                 <button class="alter-btn">Alterar</button>
                 <button>Excluir</button>
             </div>
         </div>
         <form class="form-section" style="display: none;">
-            <label for="idEvento">Evento:</label>
-            <input type="text" id="idEvento" name="idEvento"><br>
-            <label for="nomeEvento">Nome:</label>
-            <input type="text" id="nomeEvento" name="nomeEvento"><br>
+            <label for="idEvento">Código do Evento:</label>
+            <input type="text" id="idEvento" name="idEvento" value="001"><br>
             <label for="dataEvento">Data:</label>
-            <input type="date" id="dataEvento" name="dataEvento"><br>
-            <label for="descricaoEvento">Descrição:</label>
-            <textarea id="descricaoEvento" name="descricaoEvento"></textarea><br>
-            <label for="tipoEvento">Tipo:</label>
-            <input type="text" id="tipoEvento" name="tipoEvento"><br>
+            <input type="date" id="dataEvento" name="dataEvento" value="2024-12-10"><br>
+            <label for="localEvento">Local:</label>
+            <input type="text" id="localEvento" name="localEvento" value="Praça A"><br>
+            <label for="statusEvento">Status:</label>
+            <input type="text" id="statusEvento" name="statusEvento" value="Confirmado"><br>
             <button type="submit">Salvar Evento</button>
         </form>
     </section>
-
 </main>
-
-<script>
-    const addButtons = document.querySelectorAll('.add-btn');
-    const alterButtons = document.querySelectorAll('.alter-btn');
-    const forms = document.querySelectorAll('.form-section');
-
-    addButtons.forEach((button, index) => {
-        button.addEventListener('click', () => {
-            forms[index].style.display = forms[index].style.display === 'none' ? 'block' : 'none';
-        });
-    });
-
-    alterButtons.forEach((button, index) => {
-        button.addEventListener('click', () => {
-            forms[index].style.display = forms[index].style.display === 'none' ? 'block' : 'none';
-        });
-    });
-</script>
 
 </body>
 </html>
