@@ -23,7 +23,6 @@ CREATE TABLE IF NOT EXISTS Denuncia(
 
 CREATE TABLE IF NOT EXISTS VisitasApadrinhadas(
 	idVisita int primary key not null auto_increment,
-	CPF int not null,
 	idAnimal int not null, 
 	dataVisita date not null, 
 	statusVisita varchar(20) not null,
