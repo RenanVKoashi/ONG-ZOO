@@ -50,8 +50,9 @@ CREATE TABLE IF NOT EXISTS Plano (
 
 CREATE TABLE IF NOT EXISTS Apoiadores(
 	idApoiadores int primary key not null auto_increment,
-	idPlano int,
-    CNPJ varchar(18),
+	idPlano int not null,
+    	idDoacao int not null,
+    	CNPJ varchar(18),
 	nomeFantasia varchar(50) not null,
 	foreign key(idPlano) references Plano(idPlano),
 	foreign key(idDoacao) references Doacao(idDoacao)
