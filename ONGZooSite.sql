@@ -14,15 +14,17 @@ CREATE TABLE IF NOT EXISTS Animal(
 
 CREATE TABLE IF NOT EXISTS Denuncia(
 	idDenuncia int primary key not null auto_increment,
-    idAnimal int not null,
+	idUsuarioPessoa int not null,
+    	idAnimal int not null,
 	statusDenuncia varchar(20),
 	localizacaoDenuncia varchar(50) not null,
 	descricaoDenuncia varchar(100),
-    foreign key (idAnimal) references Animal(idAnimal)
+   	foreign key (idAnimal) references Animal(idAnimal)
 );
 
 CREATE TABLE IF NOT EXISTS VisitasApadrinhadas(
 	idVisita int primary key not null auto_increment,
+	idUsuarioPessoa int not null,
 	idAnimal int not null, 
 	dataVisita date not null, 
 	statusVisita varchar(20) not null,
@@ -32,8 +34,8 @@ CREATE TABLE IF NOT EXISTS VisitasApadrinhadas(
 
 CREATE TABLE IF NOT EXISTS UsuarioPessoa(
 	idUsuarioPesssoa int primary key not null auto_increment,
-    idPlano int,
-    idDoacao int,
+    	idPlano int,
+   	idDoacao int,
 	cpf varchar(14),
 	telefone varchar(15) not null,
 	endereco varchar(50) not null,
@@ -63,7 +65,7 @@ CREATE TABLE IF NOT EXISTS Doacao(
 	item varchar(30) not null,
 	quantidade int not null,
 	statusDoacao varchar(20),
-    descricao varchar(60)
+    	descricao varchar(60)
 );
 
 CREATE TABLE IF NOT EXISTS Evento(
