@@ -1283,8 +1283,7 @@ padding-top: 70px;
 .site-footer-bottom {
 background-color: var(--secondary-color);
 position: relative;
-
-z-index: 1;
+z-index: 2;
 margin-top: 70px;
 padding-top: 25px;
 padding-bottom: 25px;
@@ -1813,10 +1812,10 @@ body {
 }
 
 .action:hover{
-  background-color: #ffffff33;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .nossoseventos {
  text-align: center;
- color: ffffff33;
+ color: white;
 }
